@@ -17,14 +17,16 @@ CloudFormation:
 CloudFormation service is used to provision infrastructure in AWS platform. In this case I am spinning up S3 bucket with a template.
 CloudWatch:
 CloudWatch service used for monitoring AWS cloud infrastructure.
+AWS SNS:
+SNS is used to send alert notifications. 
+
 
 ##3.DESIGN
  
 
 Architecture Diagram
 
-![image](https://user-images.githubusercontent.com/60556160/156484182-19021315-2899-45bf-aaa6-86c15e901d09.png)
-
+![image](https://user-images.githubusercontent.com/60556160/156586137-c18184bc-315c-465a-a32a-52616fbf3b74.png)
 
  
 •	In this project developer write code and use code management tool to push it to centralized code repository [Git Hub].
