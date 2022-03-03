@@ -158,6 +158,34 @@ You can see from the above image Jenkins configured to go and search in the righ
 
 ##8.MONITORING
 
+AWS Services to be enabled:
+
+CloudWatch
+
+SNS
+
+Cloudwatch:
+
+Install CloudWatch agent in the AWS resource you need to monitor.
+
+•	Attach an IAM role to the EC2 instance that includes the following policies:
+
+CloudWatchAgentServerPolicy: This policy enables the EC2 instance to push the logs and metrics to the Amazon CloudWatch service.
+
+AmazonSSMManagedInstanceCore: This policy enables the EC2 instance to read parameters stored in the SSM parameter store and to have them registered under the SSM managed instances, so you can Run Commands against it.
+               
+	Ensure that the SSM agent is installed in this EC2 instance.
+Configure the CloudWatch Agent:
+       Once the agent is installed, the next step is to configure it to push the logs           and metrics to CloudWatch.
+       To configure the CloudWatch agent, you need to create a configuration file. You can create it by running the CloudWatch Agent Configuration Wizard, which you can start by        entering the following command:
+               
+	       sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
+	       
+Configure SNS for notification. 
+
+	So whenever my instance CPU utilization go over 5% I will receive email notification.
+
+
 
 •	Tested the server performance and stress test using yes command.
 
