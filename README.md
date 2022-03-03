@@ -9,14 +9,19 @@ This Case Study is my second and final declarative pipeline building a DevOps fl
 GIT: 
 Source code Management tool.
 Git manage source codes written by the developers.
+
 GIT HUB: 
 Distributed version control & SCM. Git Hub tool is a centralized code repository and does version control.
+
 JENKINS: 
 Continuous Integration/Continuous Deployment tool to automate process. Jenkins run jobs which build pipeline and automate the deployment process by integrating with all kinds of tool by simply by installing relevant plugins.
+
 CloudFormation:
 CloudFormation service is used to provision infrastructure in AWS platform. In this case I am spinning up S3 bucket with a template.
+
 CloudWatch:
 CloudWatch service used for monitoring AWS cloud infrastructure.
+
 AWS SNS:
 SNS is used to send alert notifications. 
 
